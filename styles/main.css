@@ -294,7 +294,7 @@ transition: .5s ease-in-out;
   .name {
     font-size: 2rem;
   }
-  .title {
+  .title, .title span {
     font-size: 1rem;
   }
   .header {
