@@ -84,6 +84,7 @@ header::after {
   width: 100vw;
   overflow: hidden;
   z-index: 99;
+  transition: .5s ease-in-out;
 }
 .nav-list {
   gap: 2rem;
@@ -103,9 +104,12 @@ header::after {
 
 /* Scroll animation */
 .nav-scroll {
-  background-color: #000;
-  color: var(--white);
-  transition: .5s ease-out;
+  /* From https://css.glass */
+background: rgba(0, 0, 0, 0.9);
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+transition: .5s ease-in-out;
   
 }
 .logo {
