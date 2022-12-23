@@ -39,11 +39,15 @@
 }
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+
 
 }
 header {
@@ -74,9 +78,12 @@ header::after {
   padding-inline: var(--inline-body-padding);
 }
 .navbar {
+  position: fixed;
+  top: 0;
   padding-block: 1rem;
   width: 100vw;
   overflow: hidden;
+  z-index: 99;
 }
 .nav-list {
   gap: 2rem;
@@ -91,6 +98,15 @@ header::after {
 }
 .nav-list li a {
   color: var(--white);
+  font-weight: 600;
+}
+
+/* Scroll animation */
+.nav-scroll {
+  background-color: #000;
+  color: var(--white);
+  transition: .5s ease-out;
+  
 }
 .logo {
   font-weight: 700;
@@ -122,7 +138,7 @@ header::after {
   padding-block: .7rem;
   background-color: transparent;
   color: var(--purple);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
   border: 2px solid var(--purple);
   border-radius: .4rem;
@@ -130,15 +146,17 @@ header::after {
   cursor: pointer;
 
 }
+
 .say-hello:hover {
   background-color: var(--purple);
   color: var(--white);
   box-shadow: 0 0 40px var(--purple);
 }
 
+
 /* profile section */
 .profile-container {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,4 +183,88 @@ header::after {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
+.arrow {
+  text-align: center;
+
+}
+.arrow span {
+  font-size: 2rem;
+  color: white;
+  border: 1px solid var(--purple);
+  padding: 1rem;
+  border-radius: 100%;
+  /* From https://css.glass */
+  background: transparent;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* about me section */
+.header{
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-family-vollkorn);
+  color: var(--purple);
+  text-align: center;
+  margin-block: 4rem;
+  text-rendering: geometricPrecision;
+}
+
+/* about me grid */
+.about-grid {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+ 
+  
+
+
+}
+.my-picture {
+  flex: 1;
+}
+ .brief {
+  flex: 1;
+}
+.my-picture img {
+  width: 100%;
+  height: 38rem;
+  object-fit: cover;
+  object-position: top;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 40px rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  
+
+}
+.brief p  {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 2;
+  font-size: 1rem;
+
+}
+
+.stuff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: left;
+
+
+}
+.stuff .item {
+  font-weight: 600;
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+
 
