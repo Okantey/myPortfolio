@@ -269,9 +269,10 @@ transition: .5s ease-in-out;
 }
 
 .stuff {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 
 
 }
