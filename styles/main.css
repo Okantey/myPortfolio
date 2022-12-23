@@ -44,6 +44,7 @@ body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
+
 }
 header {
   background: url(/assets/images/header.jpg);
@@ -74,6 +75,8 @@ header::after {
 }
 .navbar {
   padding-block: 1rem;
+  width: 100vw;
+  overflow: hidden;
 }
 .nav-list {
   gap: 2rem;
@@ -115,7 +118,7 @@ header::after {
 /* button styles */
 
 .say-hello {
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
   padding-block: .7rem;
   background-color: transparent;
   color: var(--purple);
@@ -130,11 +133,12 @@ header::after {
 .say-hello:hover {
   background-color: var(--purple);
   color: var(--white);
+  box-shadow: 0 0 40px var(--purple);
 }
 
 /* profile section */
 .profile-container {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,8 +151,14 @@ header::after {
 .name {
   font-family: var(--font-family-vollkorn);
   font-size: 4.5rem;
+  color: var(--white);
+  font-weight: 700;
+  text-shadow: 0 0 50px var(--purple);
+}
+.auto-type {
   color: var(--purple);
   font-weight: 700;
+  font-size: 2rem;
 }
 .title {
   color: var(--white);
