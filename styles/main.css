@@ -288,6 +288,18 @@ transition: .5s ease-in-out;
   .nav-list {
     display: none;
   }
+  .profile-container {
+    padding-inline: var(--inline-body-padding);
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .header {
+    font-size: 2rem;
+  }
  
 
 }
@@ -297,4 +309,5 @@ transition: .5s ease-in-out;
     grid-template-columns: 1fr;
     width: 90%;
   }
+
 }
