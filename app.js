@@ -9,7 +9,7 @@ var typed = new Typed(".auto-type", {
 const header = document.querySelector(".hero")
 const navbar = document.querySelector(".navbar")
 const headerOptions = {
-  rootMargin: "-300px 0px 0px 0px"
+  rootMargin: "-500px 0px 0px 0px"
 }
 
 const headerObserver = new IntersectionObserver(function(entries, headerObserver) {
