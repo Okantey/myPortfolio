@@ -1,0 +1,24 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "My portfolio site that showcases everything about me, projects completed and various experiences.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okantey/myPortfolio.git"
+  },
+  "keywords": [
+    "okantey",
+    "portfolio",
+    "gethired"
+  ],
+  "author": "Okantey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okantey/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/Okantey/myPortfolio#readme"
+}
