@@ -1,3 +1,37 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-vollkorn: "Vollkorn",  "Liberation Mono", "Courier New", monospace; 
+  --inline-body-padding : 5%;
+
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +41,118 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
 }
+header {
+  background: url(/assets/images/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+}
+header > * {
+  position: relative;
+  z-index: 2;
+}
+header::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.navbar , .nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--inline-body-padding);
+}
+.navbar {
+  padding-block: 1rem;
+}
+.nav-list {
+  gap: 2rem;
+  list-style: none;
+}
+.nav-list a {
+  text-decoration: none;
+  transition: .5s ease-in-out;
+}
+.nav-list a:hover{
+  color: var(--purple);
+}
+.nav-list li a {
+  color: var(--white);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.logo span {
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: inherit;
+  white-space: nowrap; 
+  border-radius: 100%;
+  /* From https://css.glass */
+  background: var(--purple);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+/* button styles */
+
+.say-hello {
+  padding-inline: 1rem;
+  padding-block: .7rem;
+  background-color: transparent;
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid var(--purple);
+  border-radius: .4rem;
+  transition: .5s ease-in;
+  cursor: pointer;
+
+}
+.say-hello:hover {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+/* profile section */
+.profile-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  padding-top: var(--inline-body-padding);
+}
+
+.name {
+  font-family: var(--font-family-vollkorn);
+  font-size: 4.5rem;
+  color: var(--purple);
+  font-weight: 700;
+}
+.title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
