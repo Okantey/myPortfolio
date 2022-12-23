@@ -186,15 +186,17 @@ transition: .5s ease-in-out;
   font-weight: 700;
   text-shadow: 0 0 50px var(--purple);
 }
+
 .auto-type {
   color: var(--purple);
   font-weight: 700;
   font-size: 2rem;
+  
 }
 .title {
   color: var(--white);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .arrow {
@@ -275,7 +277,6 @@ transition: .5s ease-in-out;
 }
 .stuff .item {
   font-weight: 600;
-  color: var(--purple);
   text-transform: uppercase;
 }
 
@@ -288,9 +289,7 @@ transition: .5s ease-in-out;
   .nav-list {
     display: none;
   }
-  .profile-container {
-    padding-inline: var(--inline-body-padding);
-  }
+
   .name {
     font-size: 2.5rem;
   }
@@ -308,6 +307,7 @@ transition: .5s ease-in-out;
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
+    gap: 2rem;
   }
 
 }
