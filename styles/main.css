@@ -26,7 +26,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-vollkorn: "Vollkorn",  "Liberation Mono", "Courier New", monospace; 
+  --font-family-serif: sans-serif, "Noto Sans", "Apple Color Emoji",;
   --inline-body-padding : 5%;
 
 
@@ -113,7 +113,7 @@ transition: .5s ease-in-out;
   
 }
 .logo {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -140,8 +140,8 @@ transition: .5s ease-in-out;
 .say-hello {
   padding-inline: 1.5rem;
   padding-block: .7rem;
-  background-color: transparent;
-  color: var(--purple);
+  background-color: var(--purple);
+  color: var(--white);
   font-weight: 600;
   font-size: 1rem;
   border: 2px solid var(--purple);
@@ -152,8 +152,6 @@ transition: .5s ease-in-out;
 }
 
 .say-hello:hover {
-  background-color: var(--purple);
-  color: var(--white);
   box-shadow: 0 0 40px var(--purple);
 }
 .hello {
@@ -180,22 +178,22 @@ transition: .5s ease-in-out;
 }
 
 .name {
-  font-family: var(--font-family-vollkorn);
+  font-family: var(--font-family-serif);
   font-size: 4.5rem;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 0 0 50px var(--purple);
 }
 
 .auto-type {
   color: var(--purple);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   
 }
 .title {
   color: var(--white);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -220,8 +218,8 @@ transition: .5s ease-in-out;
 /* about me section */
 .header{
   font-size: 2.5rem;
-  font-weight: 700;
-  font-family: var(--font-family-vollkorn);
+  font-weight: 600;
+  font-family: var(--font-family-serif);
   color: var(--purple);
   text-align: center;
   margin-block: 4rem;
@@ -303,15 +301,7 @@ transition: .5s ease-in-out;
   .header {
     font-size: 2rem;
   }
-  header {
-    height: 50vh;
-  }
-  .profile-container {
-    height: 60vh;
-  }
-  .arrow {
-    display: none;
-  }
+
  
 
 }
