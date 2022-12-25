@@ -176,6 +176,7 @@ transition: .1s;
   margin: auto;
   color: white;
   padding-top: var(--inline-body-padding);
+  padding-inline: var(--inline-body-padding);
 }
 
 .name {
@@ -186,11 +187,16 @@ transition: .1s;
   text-shadow: 0 0 50px var(--purple);
 }
 
-.auto-type, .welcome {
+.auto-type {
   color: var(--purple);
   font-weight: 600;
   font-size: 2rem;
   
+}
+.welcome {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2rem;
 }
 .title {
   color: var(--white);
@@ -291,7 +297,7 @@ transition: .1s;
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .title, .title span {
     font-size: 1.5rem;
@@ -305,6 +311,17 @@ transition: .1s;
   .arrow {
     display: none;
   }
+  .logo span {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .say-hello {
+    padding-inline: 1rem;
+    padding-block: .5rem;
+  }
 
 
  
@@ -316,6 +333,9 @@ transition: .1s;
     grid-template-columns: 1fr;
     width: 90%;
     gap: 2rem;
+  }
+  header {
+    background-attachment: scroll;
   }
 
 }
