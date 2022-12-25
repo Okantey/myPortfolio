@@ -1,6 +1,6 @@
 // auto type feature
 var typed = new Typed(".auto-type", {
-  strings: ["Frontend Developer.","UI/UX Designer.", "Freelancer" ],
+  strings: ["Frontend Developer.","UI/UX Designer.", "Freelancer." ],
   typeSpeed: 100,
   backSpeed:10,
   loop: true
@@ -9,7 +9,7 @@ var typed = new Typed(".auto-type", {
 const header = document.querySelector(".hero")
 const navbar = document.querySelector(".navbar")
 const headerOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-550px 0px 0px 0px"
 }
 
 const headerObserver = new IntersectionObserver(function(entries, headerObserver) {

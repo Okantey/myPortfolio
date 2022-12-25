@@ -186,7 +186,7 @@ transition: .1s;
   text-shadow: 0 0 50px var(--purple);
 }
 
-.auto-type {
+.auto-type, .welcome {
   color: var(--purple);
   font-weight: 600;
   font-size: 2rem;
