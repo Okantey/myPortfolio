@@ -336,9 +336,7 @@ header::after {
     width: 90%;
     gap: 2rem;
   }
-  header {
-    background-attachment: scroll;
-  }
+
 
 }
 
