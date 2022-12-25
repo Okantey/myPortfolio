@@ -45,7 +45,8 @@ body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: #020403;
+  color: white;
   overflow-x: hidden;
 
 
@@ -145,8 +146,8 @@ header::after {
 /* button styles */
 
 .say-hello {
-  padding-inline: 1.5rem;
-  padding-block: .7rem;
+  padding-inline: 1rem;
+  padding-block: .5rem;
   background-color: var(--purple);
   color: var(--white);
   font-weight: 600;
@@ -266,13 +267,13 @@ header::after {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
-  box-shadow: 0 4px 40px rgba(255, 255, 255, 0.5);
-  border: 10px solid rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 4px 40px rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5); */
   
 
 }
 .brief p  {
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1rem;
   line-height: 2;
   font-size: 1rem;
