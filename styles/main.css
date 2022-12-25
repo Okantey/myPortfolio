@@ -303,6 +303,15 @@ transition: .5s ease-in-out;
   .header {
     font-size: 2rem;
   }
+  header {
+    height: 50vh;
+  }
+  .profile-container {
+    height: 60vh;
+  }
+  .arrow {
+    display: none;
+  }
  
 
 }
