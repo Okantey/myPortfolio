@@ -435,6 +435,7 @@ header::after {
   }
   .navbar.active {
     background-color: black;
+    animation: color-nav 2s ease-in-out;
   }
   .nav-list {
     display: none;
@@ -449,7 +450,7 @@ header::after {
     width: 100%;
     background-color: black;
     padding-block: 1rem;
-    animation: nav-drop 1s ease-in-out;
+    animation: nav-drop .2s ease-in-out;
   }
   
 
@@ -514,6 +515,14 @@ header::after {
 
   }
 }
+@keyframes color-nav {
+  From {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 @keyframes nav-drop {
   From{
@@ -524,4 +533,6 @@ header::after {
     width: 100%;
   }
 }
+
+
 
