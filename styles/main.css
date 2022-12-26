@@ -486,7 +486,7 @@ header::after {
     font-size: .9rem;
   }
   .welcome {
-    display: none;
+    font-size: 1.5rem;
   }
   .my-picture img {
     width: 20rem;
