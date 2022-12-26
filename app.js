@@ -6,6 +6,26 @@ var typed = new Typed(".auto-type", {
   loop: true
 })
 
+// navbar 
+
+const navicon = document.getElementById("navicon")
+const listItem = document.querySelector(".nav-list")
+
+navicon.addEventListener('click', function(){
+  listItem.classList.toggle("active")
+  navbar.classList.toggle("active")
+
+
+
+  if(listItem.classList.contains("active")) {
+    navicon.className = "fa fa-close"
+    navicon.style.fontSize = "2rem"
+    navicon.style.cursor = "pointer"
+  } else {
+    navicon.className = "fa fa-navicon"
+  }
+})
+
 const header = document.querySelector(".hero")
 const navbar = document.querySelector(".navbar")
 const headerOptions = {

@@ -85,6 +85,7 @@ header::after {
   z-index: 99;
   padding-inline: var(--inline-body-padding);
   transition: 1s;
+  position: relative;
 
 }
 .nav-list {
@@ -428,6 +429,28 @@ header::after {
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .fa-navicon {
+    display: flex;
+    cursor: pointer;
+  }
+  .navbar.active {
+    background-color: black;
+  }
+  .nav-list {
+    display: none;
+    transition: 1s;
+  }
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding-block: 1rem;
+    animation: nav-drop 1s ease-in-out;
+  }
   
 
 
@@ -435,9 +458,9 @@ header::after {
 
 
 @media(max-width: 768px) {
-  .nav-list {
+  /* .nav-list {
     display: none;
-  }
+  } */
 
   .name {
     font-size: 2.5rem;
@@ -489,6 +512,16 @@ header::after {
     position: fixed;
     top: 0;
 
+  }
+}
+
+@keyframes nav-drop {
+  From{
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
   }
 }
 
