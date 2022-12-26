@@ -170,6 +170,9 @@ header::after {
   color: var(--white);
   display: none;
 }
+.fa-close {
+  display: none;
+}
 
 
 /* profile section */
@@ -429,7 +432,7 @@ header::after {
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .fa-navicon {
+  .fa-navicon, .fa-close {
     display: flex;
     cursor: pointer;
   }
