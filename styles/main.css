@@ -26,7 +26,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-serif: 'Merriweather', serif;
+  --font-family-serif: 'Raleway', serif;
   --inline-body-padding : 5%;
 
 
@@ -236,13 +236,14 @@ header::after {
   color: var(--purple);
   margin-top: 5rem;
   text-align: center;
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-serif);
+
 }
 .header{
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: .2rem;
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-poppins);
   color: var(--white);
   text-align: center;
   margin-bottom: 5rem;
@@ -347,7 +348,7 @@ header::after {
   padding-block: 2rem;
   border-radius: 10px;
   /* From https://css.glass */
-  box-shadow: 0 0px 10px var(--purple);
+  box-shadow: 0 0px 20px var(--purple);
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
 
@@ -363,8 +364,62 @@ header::after {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact me */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  margin: auto;
+  gap: 3rem;
+}
+.contact-grid label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+.contact-grid input, .contact-grid textarea {
+  width: 100%;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+  outline: 2px solid var(--purple);
+  /* From https://css.glass */
+  border-radius: 2px;
+  background: var(--white);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.contact-grid iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
 @media(max-width: 1024px) {
-  .about-grid {
+  .about-grid, .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
@@ -373,6 +428,7 @@ header::after {
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
+  
 
 
 }
