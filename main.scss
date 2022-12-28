@@ -155,7 +155,7 @@ header::after {
 }
 
 .say-hello:hover {
-  box-shadow: 0 0 40px var(--purple);
+  box-shadow: 0 0 60px var(--purple);
 }
 .hello {
   align-items: center;
@@ -336,8 +336,8 @@ header::after {
 .download button {
   padding-inline: 1.5rem;
   padding-block: 0.7rem;
-  background-color: white;
-  color: var(--purple);
+  background-color: var(--purple);
+  color: white;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
@@ -347,8 +347,7 @@ header::after {
   cursor: pointer;
 }
 .download button:hover {
-  background-color: var(--purple);
-  color: var(--white);
+  box-shadow: 0 0 50px var(--purple);
 }
 /* services section */
 
@@ -363,8 +362,8 @@ header::after {
 .services-grid > div {
   padding-block: 2rem;
   border-radius: 10px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #fafafa;
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
 }
 .services-grid span {
   color: var(--purple);
