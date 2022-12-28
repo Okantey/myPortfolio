@@ -20,6 +20,8 @@
   "bugs": {
     "url": "https://github.com/Okantey/myPortfolio/issues"
   },
-  "homepage": "https://github.com/Okantey/myPortfolio#readme"
- 
-} 
+  "homepage": "https://github.com/Okantey/myPortfolio#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
