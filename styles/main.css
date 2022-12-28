@@ -323,10 +323,8 @@ header::after {
 .services-grid > div {
   padding-block: 2rem;
   border-radius: 10px;
-  /* From https://css.glass */
-  box-shadow: 0 0px 20px var(--purple);
-  /* backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); */
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .services-grid span {
   color: var(--purple);
@@ -358,7 +356,7 @@ header::after {
   outline: 2px solid var(--purple);
   /* From https://css.glass */
   border-radius: 2px;
-  background: var(--white);
+  background: transparent;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
