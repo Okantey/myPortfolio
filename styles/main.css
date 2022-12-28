@@ -25,11 +25,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-serif: 'Raleway', serif;
-  --inline-body-padding : 5%;
-
-
+  --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-family-serif: "Raleway", serif;
+  --inline-body-padding: 5%;
 }
 
 * {
@@ -45,11 +45,9 @@ body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
-  background-color: #040200;
-  color: white;
+  background-color: #fbfbf9;
+  color: var(--dark);
   overflow-x: hidden;
-
-
 }
 header {
   background: url(/assets/images/header.jpg);
@@ -60,7 +58,6 @@ header {
   height: 100vh;
   position: relative;
   z-index: 1;
-
 }
 header > * {
   position: relative;
@@ -70,23 +67,21 @@ header::after {
   position: absolute;
   content: "";
   inset: 0;
-  background: rgba(0, 0, 0, 0.5)
+  background: rgba(0, 0, 0, 0.5);
 }
-.navbar , .nav-list{
+.navbar,
+.nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .navbar {
-
   width: 100%;
   padding-block: 1rem;
   z-index: 99;
   padding-inline: var(--inline-body-padding);
   transition: 1s;
   position: relative;
-
 }
 .nav-list {
   gap: 2rem;
@@ -94,9 +89,9 @@ header::after {
 }
 .nav-list a {
   text-decoration: none;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.nav-list a:hover{
+.nav-list a:hover {
   color: var(--purple);
 }
 .nav-list li a {
@@ -113,9 +108,8 @@ header::after {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
-  transition: .1s;
+  transition: 0.1s;
   animation: drop-in 1s ease-in-out;
-  
 }
 .logo {
   font-weight: 600;
@@ -126,7 +120,7 @@ header::after {
 }
 .logo span {
   font-size: 1.5rem;
-  padding-inline: .5rem;
+  padding-inline: 0.5rem;
   text-align: center;
   /* line-height: inherit;
   white-space: nowrap;  */
@@ -141,22 +135,20 @@ header::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 /* button styles */
 
 .say-hello {
   padding-inline: 1rem;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   background-color: var(--purple);
   color: var(--white);
   font-weight: 600;
   font-size: 1rem;
   border: 2px solid var(--purple);
-  border-radius: .2rem;
-  transition: .5s ease-in;
+  border-radius: 0.2rem;
+  transition: 0.5s ease-in;
   cursor: pointer;
-
 }
 
 .say-hello:hover {
@@ -173,7 +165,6 @@ header::after {
 .fa-close {
   display: none;
 }
-
 
 /* profile section */
 .profile-container {
@@ -202,7 +193,6 @@ header::after {
   color: var(--purple);
   font-weight: 600;
   font-size: 2rem;
-  
 }
 .welcome {
   color: var(--white);
@@ -217,7 +207,6 @@ header::after {
 
 .arrow {
   text-align: center;
-
 }
 .arrow span {
   font-size: 2rem;
@@ -234,26 +223,22 @@ header::after {
 }
 
 /* about me section */
-.sub-header{
+.sub-header {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--purple);
   margin-top: 5rem;
   text-align: center;
   font-family: var(--font-family-serif);
-
 }
-.header{
+.header {
   font-size: 2rem;
   font-weight: 500;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-family: var(--font-family-poppins);
-  color: var(--white);
+  color: black;
   text-align: center;
   margin-bottom: 5rem;
-
-  
-
 }
 
 /* about me grid */
@@ -264,16 +249,12 @@ header::after {
   justify-content: center;
   align-items: center;
   gap: 4rem;
- 
-  
-
-
 }
 
 .my-picture {
   flex: 1;
 }
- .brief {
+.brief {
   flex: 1;
 }
 .my-picture {
@@ -289,27 +270,18 @@ header::after {
   border-radius: 100%;
 
   /* box-shadow: 0 0 20px var(--purple); */
-
-  
-
 }
-.brief p  {
+.brief p {
   font-weight: 500;
   margin-bottom: 1rem;
   line-height: 2;
   font-size: 1rem;
-
 }
-
 
 .stuff {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
-
-
 }
 .stuff .item {
   font-weight: 600;
@@ -327,14 +299,14 @@ header::after {
 }
 .download button {
   padding-inline: 1.5rem;
-  padding-block: .7rem;
+  padding-block: 0.7rem;
   background-color: var(--purple);
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   border: 1px solid var(--purple);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   cursor: pointer;
 }
 
@@ -355,7 +327,6 @@ header::after {
   box-shadow: 0 0px 20px var(--purple);
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
-
 }
 .services-grid span {
   color: var(--purple);
@@ -365,29 +336,6 @@ header::after {
 .services-grid p {
   font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* contact me */
 .contact-grid {
@@ -399,10 +347,11 @@ header::after {
 }
 .contact-grid label {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
-.contact-grid input, .contact-grid textarea {
+.contact-grid input,
+.contact-grid textarea {
   width: 100%;
   padding-block: 1rem;
   margin-bottom: 1rem;
@@ -410,7 +359,6 @@ header::after {
   /* From https://css.glass */
   border-radius: 2px;
   background: var(--white);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -420,10 +368,17 @@ header::after {
 .contact-grid iframe {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
 }
-@media(max-width: 1024px) {
-  .about-grid, .contact-grid {
+@media (max-width: 1024px) {
+  .about-grid,
+  .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
@@ -432,7 +387,8 @@ header::after {
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .fa-navicon, .fa-close {
+  .fa-navicon,
+  .fa-close {
     display: flex;
     cursor: pointer;
   }
@@ -453,15 +409,11 @@ header::after {
     width: 100%;
     background-color: black;
     padding-block: 1rem;
-    animation: nav-drop .2s ease-in-out;
+    animation: nav-drop 0.2s ease-in-out;
   }
-  
-
-
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   /* .nav-list {
     display: none;
   } */
@@ -469,7 +421,8 @@ header::after {
   .name {
     font-size: 2.5rem;
   }
-  .title, .title span {
+  .title,
+  .title span {
     font-size: 1.5rem;
   }
   .title {
@@ -479,11 +432,10 @@ header::after {
     font-size: 2rem;
   }
 
-
   .say-hello {
     padding-inline: 1rem;
-    padding-block: .5rem;
-    font-size: .9rem;
+    padding-block: 0.5rem;
+    font-size: 0.9rem;
   }
   .welcome {
     font-size: 1.5rem;
@@ -492,34 +444,23 @@ header::after {
     width: 20rem;
     height: 20rem;
   }
-  .services-grid{
+  .services-grid {
     grid-template-columns: 1fr;
   }
-
-
- 
-
 }
 
-
-
-
-
-
 @keyframes drop-in {
-  From{
+  from {
     position: static;
     top: -100px;
-
   }
   to {
     position: fixed;
     top: 0;
-
   }
 }
 @keyframes color-nav {
-  From {
+  from {
     width: 0%;
   }
   to {
@@ -528,7 +469,7 @@ header::after {
 }
 
 @keyframes nav-drop {
-  From{
+  from {
     width: 0%;
   }
 
@@ -536,6 +477,3 @@ header::after {
     width: 100%;
   }
 }
-
-
-
