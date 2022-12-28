@@ -208,6 +208,51 @@ header::after {
   font-weight: 600;
   font-size: 2rem;
 }
+.scroll {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
 
 /* about me section */
 .sub-header {
@@ -369,7 +414,7 @@ header::after {
   -webkit-backdrop-filter: blur(0px);
   border: 3px solid rgba(255, 255, 255, 0.3);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
   .about-grid,
   .contact-grid {
     display: grid;
