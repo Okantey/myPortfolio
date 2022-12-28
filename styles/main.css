@@ -163,6 +163,7 @@ header::after {
   display: none;
 }
 .fa-close {
+  color: var(--white);
   display: none;
 }
 
@@ -300,16 +301,20 @@ header::after {
 .download button {
   padding-inline: 1.5rem;
   padding-block: 0.7rem;
-  background-color: var(--purple);
-  color: white;
+  background-color: white;
+  color: var(--purple);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   border: 1px solid var(--purple);
   border-radius: 0.2rem;
+  transition: 0.5s ease-out;
   cursor: pointer;
 }
-
+.download button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+}
 /* services section */
 
 .services-grid {
@@ -408,6 +413,13 @@ header::after {
     background-color: black;
     padding-block: 1rem;
     animation: nav-drop 0.2s ease-in-out;
+  }
+  .nav-list li a {
+    font-size: 1.2rem;
+  }
+  .say-hello {
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 }
 
