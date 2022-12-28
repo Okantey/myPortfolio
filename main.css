@@ -37,10 +37,12 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--font-family-poppins);
   margin: 0;
@@ -49,6 +51,7 @@ body {
   color: var(--dark);
   overflow-x: hidden;
 }
+
 header {
   background: url(/assets/images/header.jpg);
   background-position: center;
@@ -59,22 +62,26 @@ header {
   position: relative;
   z-index: 1;
 }
+
 header > * {
   position: relative;
   z-index: 2;
 }
+
 header::after {
   position: absolute;
   content: "";
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .navbar,
 .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar {
   width: 100%;
   padding-block: 1rem;
@@ -83,17 +90,21 @@ header::after {
   transition: 1s;
   position: relative;
 }
+
 .nav-list {
   gap: 2rem;
   list-style: none;
 }
+
 .nav-list a {
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
+
 .nav-list a:hover {
   color: var(--purple);
 }
+
 .nav-list li a {
   color: var(--white);
   font-weight: 600;
@@ -104,13 +115,15 @@ header::after {
   /* From https://css.glass */
   position: fixed;
   top: 0;
-  background: rgba(0, 0, 0, 1);
+  background: rgb(0, 0, 0);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
   transition: 0.1s;
-  animation: drop-in 1s ease-in-out;
+  -webkit-animation: drop-in 1s ease-in-out;
+          animation: drop-in 1s ease-in-out;
 }
+
 .logo {
   font-weight: 600;
   font-size: 1.2rem;
@@ -119,6 +132,7 @@ header::after {
   color: white;
   transition: 0.5s;
 }
+
 .logo span {
   font-size: 1.5rem;
   padding-inline: 0.5rem;
@@ -140,7 +154,6 @@ header::after {
 }
 
 /* button styles */
-
 .say-hello {
   padding-inline: 1rem;
   padding-block: 0.5rem;
@@ -157,14 +170,17 @@ header::after {
 .say-hello:hover {
   box-shadow: 0 0 40px var(--purple);
 }
+
 .hello {
   align-items: center;
 }
+
 .fa-navicon {
   font-size: 2rem;
   color: var(--white);
   display: none;
 }
+
 .fa-close {
   color: var(--white);
   display: none;
@@ -198,11 +214,13 @@ header::after {
   font-weight: 600;
   font-size: 2rem;
 }
+
 .welcome {
   color: var(--white);
   font-weight: 600;
   font-size: 2rem;
 }
+
 .title {
   color: var(--white);
   font-weight: 600;
@@ -218,6 +236,7 @@ header::after {
   text-align: center;
   font-family: var(--font-family-serif);
 }
+
 .header {
   font-size: 2rem;
   font-weight: 500;
@@ -245,23 +264,28 @@ header::after {
 .my-picture {
   flex: 1;
 }
+
 .brief {
   flex: 1;
 }
+
 .my-picture {
   text-align: center;
 }
+
 .my-picture img {
   width: 25rem;
   height: 25rem;
-  object-fit: cover;
-  object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 100%;
-
   /* box-shadow: 0 0 20px var(--purple); */
 }
+
 .brief p {
   font-weight: 500;
   margin-bottom: 1rem;
@@ -274,10 +298,12 @@ header::after {
   align-items: center;
   justify-content: space-between;
 }
+
 .stuff .item {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .stuff-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -285,9 +311,11 @@ header::after {
   padding-block: 2rem;
   font-weight: 600;
 }
+
 .stars {
   color: var(--purple);
 }
+
 .download button {
   padding-inline: 1.5rem;
   padding-block: 0.7rem;
@@ -301,12 +329,13 @@ header::after {
   transition: 0.5s ease-out;
   cursor: pointer;
 }
+
 .download button:hover {
   background-color: var(--purple);
   color: var(--white);
 }
-/* services section */
 
+/* services section */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -321,11 +350,13 @@ header::after {
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
+
 .services-grid span {
   color: var(--purple);
   padding-block: 1rem;
   font-size: 3rem;
 }
+
 .services-grid p {
   font-weight: 500;
 }
@@ -338,11 +369,13 @@ header::after {
   margin: auto;
   gap: 4rem;
 }
+
 .contact-grid label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+
 .contact-grid input,
 .contact-grid textarea {
   width: 100%;
@@ -358,6 +391,7 @@ header::after {
   font-weight: 300;
   font-size: 1.2rem;
 }
+
 .contact-grid iframe {
   height: 100%;
   width: 100%;
@@ -369,9 +403,10 @@ header::after {
   -webkit-backdrop-filter: blur(0px);
   border: 3px solid rgba(255, 255, 255, 0.3);
 }
+
 @media (max-width: 1024px) {
   .about-grid,
-  .contact-grid {
+.contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
@@ -385,13 +420,14 @@ header::after {
     grid-template-columns: 1fr 1fr;
   }
   .fa-navicon,
-  .fa-close {
+.fa-close {
     display: flex;
     cursor: pointer;
   }
   .navbar.active {
     background-color: black;
-    animation: color-nav 2s ease-in-out;
+    -webkit-animation: color-nav 2s ease-in-out;
+            animation: color-nav 2s ease-in-out;
   }
   .nav-list {
     display: none;
@@ -406,31 +442,32 @@ header::after {
     width: 100%;
     background-color: black;
     padding-block: 1rem;
-    animation: nav-drop 0.2s ease-in-out;
+    -webkit-animation: nav-drop 0.2s ease-in-out;
+            animation: nav-drop 0.2s ease-in-out;
   }
   .nav-list li a {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    animation: reveal 5s ease-out;
+    -webkit-animation: reveal 5s ease-out;
+            animation: reveal 5s ease-out;
   }
   .say-hello {
     text-transform: uppercase;
     font-size: 1.3rem;
-    animation: reveal 5s ease-out;
+    -webkit-animation: reveal 5s ease-out;
+            animation: reveal 5s ease-out;
   }
 }
-
 @media (max-width: 768px) {
   /* .nav-list {
     display: none;
   } */
-
   .name {
     font-size: 2.5rem;
   }
   .title,
-  .title span {
+.title span {
     font-size: 1.5rem;
   }
   .title {
@@ -439,7 +476,6 @@ header::after {
   .header {
     font-size: 2rem;
   }
-
   .say-hello {
     padding-inline: 1rem;
     padding-block: 0.5rem;
@@ -456,7 +492,16 @@ header::after {
     grid-template-columns: 1fr;
   }
 }
-
+@-webkit-keyframes drop-in {
+  from {
+    position: static;
+    top: -100px;
+  }
+  to {
+    position: fixed;
+    top: 0;
+  }
+}
 @keyframes drop-in {
   from {
     position: static;
@@ -467,6 +512,14 @@ header::after {
     top: 0;
   }
 }
+@-webkit-keyframes color-nav {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 @keyframes color-nav {
   from {
     width: 0%;
@@ -475,23 +528,35 @@ header::after {
     width: 100%;
   }
 }
-
-@keyframes nav-drop {
+@-webkit-keyframes nav-drop {
   from {
     width: 0%;
   }
-
   to {
     width: 100%;
   }
 }
-
-@keyframes reveal {
+@keyframes nav-drop {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes reveal {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
