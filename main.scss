@@ -359,7 +359,9 @@ header::after {
   text-align: center;
   gap: 3rem;
 }
-
+.services-grid p {
+  font-weight: 600;
+}
 .services-grid > div {
   padding-block: 2rem;
   border-radius: 10px;
