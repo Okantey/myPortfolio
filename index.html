@@ -21,6 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="/assets/images/rounded_corners.png"
@@ -47,7 +48,7 @@
       </nav>
 
       <!-- Profile image and title -->
-      <div class="profile-container">
+      <div class="profile-container" data-aos="zoom-out">
         <div class="welcome">Hey there! 👋. My name is</div>
         <div class="name">Gideon Nii Okantey Nunoo</div>
         <div class="title">I'm a <span class="auto-type"></span></div>
@@ -58,9 +59,9 @@
 
     <!-- About section -->
     <main>
-      <div class="sub-header">Discover</div>
-      <div class="header">About Me</div>
-      <div class="about-grid">
+      <div class="sub-header" data-aos="flip-right">Discover</div>
+      <div class="header" data-aos="fade-up">About Me</div>
+      <div class="about-grid" data-aos="fade-down">
         <div class="my-picture">
           <img src="/assets/images/Okantey.jpg" alt="" />
         </div>
@@ -159,7 +160,7 @@
       <!-- services grid -->
       <div class="services-grid">
         <div>
-          <span class="fa fa-github"></span>
+          <span class="fa fa-code"></span>
           <p>Web Development</p>
           <p></p>
         </div>
@@ -189,6 +190,66 @@
           <p></p>
         </div>
       </div>
+      <!-- portfolio -->
+      <div class="sub-header">Take a Look</div>
+      <div class="header">My Portfolio</div>
+      <!-- portfolio grid -->
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img
+            src="/icons/thumbnail-project-1-large.webp"
+            alt="amy-landing page"
+          />
+          <p>DESIGN PORTFOLIO</p>
+          <div class="language">
+            <span>Html</span>
+            <span>Tailwind CSS</span>
+            <span>Javascript</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="/icons/thumbnail-project-2-large.webp" alt="" />
+          <p>E-LEARNING LANDING PAGE</p>
+          <div class="language">
+            <span>Html</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="/icons/thumbnail-project-3-large.webp" alt="" />
+          <p>TODO WEB APP</p>
+          <div class="language">
+            <span>React Js</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="/icons/thumbnail-project-4-large.webp" alt="" />
+          <p>ENTERTAINMENT WEB APP</p>
+          <div class="language">
+            <span>React Js</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="/icons/thumbnail-project-5-large.webp" alt="" />
+          <p>MEMORY GAME</p>
+          <div class="language">
+            <span>Html</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="/icons/thumbnail-project-6-large.webp" alt="" />
+          <p>ART GALLERY</p>
+          <div class="language">
+            <span>React Js</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
 
       <!-- Contact section(say hello) -->
       <div class="sub-header">Make that Conversation Happen</div>
@@ -212,6 +273,7 @@
               cols="30"
               rows="10"
             ></textarea>
+            <button class="fa fa-send" id="hello">SAY HELLO</button>
           </form>
         </div>
         <div class="maps">
@@ -227,11 +289,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/app.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

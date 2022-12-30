@@ -351,7 +351,8 @@ header::after {
 }
 /* services section */
 
-.services-grid {
+.services-grid,
+.portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-inline: var(--inline-body-padding);
@@ -364,7 +365,18 @@ header::after {
   border-radius: 10px;
   background: #fafafa;
   box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
+  transition: 0.5s ease;
 }
+.services-grid > div:hover {
+  background-color: var(--purple);
+}
+.services-grid > div:hover span {
+  color: white;
+}
+.services-grid > div:hover p {
+  color: white;
+}
+
 .services-grid span {
   color: var(--purple);
   padding-block: 1rem;
@@ -373,7 +385,39 @@ header::after {
 .services-grid p {
   font-weight: 500;
 }
-
+// portfolio
+.portfolio-grid img {
+  width: 100%;
+  transition: 1s ease-in;
+}
+.portfolio-grid .portfolio-item {
+  position: relative;
+  cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: 1s;
+}
+.portfolio-grid p {
+  font-weight: 700;
+  background-color: var(--purple);
+  padding-block: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.portfolio-grid .language {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+// .portfolio-grid span {
+//   margin-inline: 0.5rem;
+// }
+.portfolio-grid span::before {
+  content: "👉";
+}
 /* contact me */
 .contact-grid {
   display: grid;
@@ -388,19 +432,35 @@ header::after {
   font-weight: 600;
 }
 .contact-grid input,
-.contact-grid textarea {
+.contact-grid textarea,
+#hello {
   width: 100%;
   padding-block: 1rem;
   margin-bottom: 1rem;
-  outline: 2px solid var(--purple);
+  outline: none;
   /* From https://css.glass */
-  border-radius: 2px;
-  background: transparent;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+
   font-weight: 300;
   font-size: 1.2rem;
+}
+#hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--purple);
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+#hello:hover {
+  box-shadow: 0 0 10px var(--purple);
 }
 .contact-grid iframe {
   height: 100%;
@@ -408,10 +468,8 @@ header::after {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 15px solid rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 1160px) {
   .about-grid,
@@ -425,7 +483,8 @@ header::after {
     box-shadow: none;
     padding: 0;
   }
-  .services-grid {
+  .services-grid,
+  .portfolio-grid {
     grid-template-columns: 1fr 1fr;
   }
   .fa-navicon,
@@ -496,7 +555,8 @@ header::after {
     width: 20rem;
     height: 20rem;
   }
-  .services-grid {
+  .services-grid,
+  .portfolio-grid {
     grid-template-columns: 1fr;
   }
 }
