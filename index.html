@@ -40,11 +40,11 @@
         </div>
         <ul class="nav-list">
           <li class="list-item"><a href="#">Home</a></li>
-          <li class="list-item"><a href="#">About</a></li>
-          <li class="list-item"><a href="#">Services</a></li>
-          <li class="list-item"><a href="#">Portfolio</a></li>
+          <li class="list-item"><a href="#about" name="about">About</a></li>
+          <li class="list-item"><a href="#services">Services</a></li>
+          <li class="list-item"><a href="#portfolio">Portfolio</a></li>
           <div class="hello">
-            <button class="say-hello">Say Hello</button>
+            <a href="#contact"><button class="say-hello" id="">Say Hello</button></a>
           </div>
         </ul>
 
@@ -58,12 +58,12 @@
         <div class="title">I'm a <span class="auto-type"></span></div>
       </div>
       <!-- Arrow pointing downwards -->
-      <div class="scroll"></div>
+      <div class="scroll" id="about"></div>
     </header>
 
     <!-- About section -->
     <main>
-      <div class="sub-header" .="fade-up">Discover</div>
+      <div class="sub-header" .="fade-up" >Discover</div>
       <div class="header" .="fade-down">About Me</div>
       <div class="about-grid" .="fade-down">
         <div class="my-picture">
@@ -272,7 +272,7 @@
             </div>
           </div>
 
-          <div class="download" .="fade-in">
+          <div class="download" .="fade-in" id="services">
             <button>Download CV</button>
           </div>
         </div>
@@ -310,7 +310,7 @@
         </div>
         <div .="fade-down">
           <span class="fa fa-globe"></span>
-          <p>Seo Marketing</p>
+          <p id="portfolio">Seo Marketing</p>
           <p></p>
         </div>
       </div>
@@ -370,7 +370,7 @@
           <p>ART GALLERY</p>
           <div class="language">
             <span>React Js</span>
-            <span>Tailwind CSS</span>
+            <span id="contact">Tailwind CSS</span>
           </div>
         </div>
       </div>
@@ -412,7 +412,26 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="my-logo">
+        <img src="/assets/images/whatsapp.jpg" alt="okantey">
+        <span>Kantey</span>
+      </div>
+      <p>Impressed? hell yeah! hopefully i work on your next project. Get in touch with my on various social media platforms</p>
+      <div class="icons">
+        <span class="fa fa-facebook"></span>
+        <span class="fa fa-twitter"></span>
+        <span class="fa fa-google"></span>
+        <span class="fa fa-linkedin"></span>
+      </div>
+      <div class="copyright">
+        Copyright <span class="fa fa-copyright"></span> <script>new Date().getFullYear()</script>
+        <span>All rights reserved.</span>
+      </div>
+    </footer>
 
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

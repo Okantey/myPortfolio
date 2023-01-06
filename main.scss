@@ -25,11 +25,10 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-poppins: "Poppins", "Helvetica Neue", Arial, "Noto Sans",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  --font-family-poppins: "Poppins", sans-serif;
   --font-family-serif: "Raleway", serif;
   --inline-body-padding: 5%;
+  scroll-behavior: smooth;
 }
 
 * {
