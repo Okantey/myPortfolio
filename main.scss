@@ -113,16 +113,18 @@ header::after {
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
 }
 .logo img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
   transition: 0.5s;
 }
 .logo span {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
   /* line-height: inherit;
   white-space: nowrap;  */
@@ -468,6 +470,64 @@ header::after {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 15px solid rgba(255, 255, 255, 0.5);
 }
+
+// footer of webpage
+footer {
+  width: 100vw;
+  background: #000;
+  color: #fff;
+  padding: 3rem 0rem 0rem 0rem;
+  margin-top: 3rem;
+}
+.my-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 700;
+}
+.my-logo img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+footer p {
+  text-align: center;
+  padding-block: 1rem;
+  width: 50%;
+  margin: auto;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.icons span {
+  width: 3rem;
+  height: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: 1px solid var(--purple);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  color: var(--purple);
+}
+.icons span:hover {
+  background-color: var(--purple);
+  color: white;
+}
+.copyright {
+  text-align: center;
+  padding-block: 2rem;
+  font-weight: 700;
+}
 @media (max-width: 1160px) {
   .about-grid,
   .contact-grid {
@@ -542,7 +602,9 @@ header::after {
   .sub-header {
     font-size: 1.2rem;
   }
-
+  footer p {
+    width: 90%;
+  }
   .say-hello {
     padding-inline: 1rem;
     padding-block: 0.5rem;
