@@ -433,6 +433,10 @@ header::after {
   /* box-shadow: 0 0 20px var(--purple); */
 }
 
+.about-me {
+  text-align: justify;
+}
+
 .brief p {
   font-weight: 500;
   margin-bottom: 1rem;
