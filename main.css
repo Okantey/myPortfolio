@@ -404,6 +404,10 @@ header::after {
   gap: 4rem;
 }
 
+.about-grid h1 {
+  color: black;
+}
+
 .my-picture {
   flex: 1;
 }
