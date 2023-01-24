@@ -54,3 +54,6 @@ const headerObserver = new IntersectionObserver(function (entries, headerObserve
 
 }, headerOptions)
 headerObserver.observe(header)
+
+
+
