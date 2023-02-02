@@ -55,5 +55,10 @@ const headerObserver = new IntersectionObserver(function (entries, headerObserve
 }, headerOptions)
 headerObserver.observe(header)
 
+// function to get github repository
+const getGithub = () => {
+
+}
+
 
 
