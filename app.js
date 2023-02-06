@@ -29,7 +29,7 @@ navicon.addEventListener('click', function () {
 
   if (listItem.classList.contains("active")) {
     navicon.className = "fa fa-close"
-    navicon.style.fontSize = "2rem"
+    navicon.style.fontSize = "1.5rem"
     navicon.style.cursor = "pointer"
     navicon.style.transition = "2s ease"
   } else {

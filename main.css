@@ -235,8 +235,8 @@ header::after {
 }
 
 .logo img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
   transition: 0.5s;
 }
@@ -279,7 +279,7 @@ header::after {
 }
 
 .fa-navicon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--white);
   display: none;
 }
@@ -641,8 +641,8 @@ footer {
 }
 
 .my-logo img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
   transition: 0.5s;
 }
