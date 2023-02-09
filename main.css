@@ -417,6 +417,7 @@ header::after {
 }
 
 .intro-text {
+  text-align: justify;
   font-size: 1rem !important;
 }
 
