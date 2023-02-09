@@ -363,24 +363,16 @@ header::after {
 .about-grid {
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
   gap: 4rem;
 }
 
-.my-picture {
-  flex: 1;
-}
-.brief {
-  flex: 1;
-}
-.my-picture {
-  text-align: center;
-}
 .my-picture img {
   width: 25rem;
   height: 25rem;
+
   object-fit: cover;
   object-position: top;
   /* From https://css.glass */
@@ -392,8 +384,11 @@ header::after {
 
   /* box-shadow: 0 0 20px var(--purple); */
 }
+.my-picture {
+  margin-right: auto;
+  margin-left: auto;
+}
 .about-me {
-  text-align: justify;
   line-height: 2;
 }
 .brief p {
@@ -404,7 +399,13 @@ header::after {
 }
 .intro {
   line-height: 1;
-  padding-block: 0.5rem;
+  padding-block: 1rem;
+  font-size: 1.8rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+.intro-text {
+  font-size: 1rem !important;
 }
 
 .stuff {
@@ -636,6 +637,16 @@ footer p {
   .about-grid {
     box-shadow: none;
     padding: 0;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro-text {
+    text-align: justify;
+  }
+
+  .about-me {
+    text-align: justify;
   }
 
   .services-grid,
