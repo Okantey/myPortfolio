@@ -377,8 +377,8 @@ header::after {
 }
 
 .my-picture img {
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
