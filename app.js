@@ -42,7 +42,7 @@ const navbar = document.querySelector(".navbar")
 const headerOptions = {
   rootMargin: "-300px 0px 0px 0px"
 }
-
+// this line makes sure the intersection observer works when the user scrolls past a certain width in the document window
 const headerObserver = new IntersectionObserver(function (entries, headerObserver) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
@@ -51,6 +51,8 @@ const headerObserver = new IntersectionObserver(function (entries, headerObserve
       navbar.classList.remove("nav-scroll")
     }
   })
+
+
 
 }, headerOptions)
 headerObserver.observe(header)
