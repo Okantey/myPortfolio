@@ -607,7 +607,7 @@ header::after {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 15px solid rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 footer {
