@@ -444,6 +444,17 @@ header::after {
   color: var(--purple);
 }
 
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-lang {
+  width: 3rem;
+}
+
 .download button {
   padding-inline: 1.5rem;
   padding-block: 1rem;
