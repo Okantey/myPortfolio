@@ -442,6 +442,7 @@ header::after {
 
 .stars {
   color: var(--purple);
+  font-size: 0.9rem;
 }
 
 .lang {
