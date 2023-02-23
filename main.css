@@ -476,10 +476,17 @@ header::after {
 }
 
 /* services section */
-.services-grid,
-.portfolio-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-inline: var(--inline-body-padding);
+  text-align: center;
+  gap: 3rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding-inline: var(--inline-body-padding);
   text-align: center;
   gap: 3rem;
