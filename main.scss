@@ -201,7 +201,7 @@ header::after {
 }
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.2rem;
 }
 .logo img {
@@ -212,8 +212,8 @@ header::after {
 }
 .logo span {
   color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 800;
   text-align: center;
   /* line-height: inherit;
   white-space: nowrap;  */
