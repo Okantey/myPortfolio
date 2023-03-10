@@ -33,7 +33,7 @@ navicon.addEventListener('click', function () {
     navicon.style.cursor = "pointer"
     navicon.style.transition = "2s ease"
   } else {
-    navicon.className = "fa fa-navicon"
+    navicon.className = "fa-solid fa-bars-staggered"
   }
 })
 
