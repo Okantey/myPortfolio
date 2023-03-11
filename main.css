@@ -263,7 +263,7 @@ header::after {
 
 .fa-navicon {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--purple);
   display: none;
 }
 
