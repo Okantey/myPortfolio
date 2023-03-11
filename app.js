@@ -28,12 +28,12 @@ navicon.addEventListener('click', function () {
 
 
   if (listItem.classList.contains("active")) {
-    navicon.className = "fa fa-navicon"
+    navicon.className = "fa fa-close"
     navicon.style.fontSize = "2rem"
     navicon.style.cursor = "pointer"
     navicon.style.transition = "2s ease"
   } else {
-    navicon.className = "fa fa-close"
+    navicon.className = "fa fa-navicon"
   }
 })
 
