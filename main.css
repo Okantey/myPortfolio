@@ -47,7 +47,7 @@ body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
-  background-color: #fcfbfc;
+  background-color: #fbfcf8;
   color: var(--dark);
   overflow-x: hidden;
 }
