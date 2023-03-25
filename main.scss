@@ -485,6 +485,7 @@ header::after {
 }
 .services-grid > div:hover {
   background-color: var(--purple);
+  transform: translateY(-10px);
 }
 .services-grid > div:hover span {
   color: white;
