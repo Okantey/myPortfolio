@@ -297,8 +297,9 @@ header::after {
 
 .auto-type {
   color: var(--purple);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .welcome {
