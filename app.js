@@ -10,8 +10,8 @@ function vanish() {
 
 // auto type feature
 var typed = new Typed(".auto-type", {
-  strings: ["Frontend Developer.", "Mobile Developer", "UI/UX Designer.", "Freelancer."],
-  typeSpeed: 100,
+  strings: ["Frontend Developer.", "Mobile Developer.", "UI/UX Designer.", "Freelancer."],
+  typeSpeed: 90,
   backSpeed: 10,
   loop: true
 })
