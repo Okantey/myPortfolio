@@ -505,6 +505,8 @@ header::after {
 // portfolio
 .portfolio-grid img {
   width: 100%;
+  height: 22rem;
+  object-fit: cover;
   transition: 1s ease-in;
 }
 .portfolio-grid .portfolio-item {
