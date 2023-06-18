@@ -19,7 +19,7 @@
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #f8f9fa;
+  --light: #fcfbfc;
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -47,7 +47,7 @@ body {
   font-family: var(--font-family-poppins);
   margin: 0;
   padding: 0;
-  background-color: #fbfaf2;
+  background-color: var(--light);
   color: var(--dark);
   overflow-x: hidden;
 }
