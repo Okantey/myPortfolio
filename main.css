@@ -160,7 +160,7 @@ header::after {
   position: absolute;
   content: "";
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar,
@@ -299,7 +299,7 @@ header::after {
   color: var(--purple);
   font-weight: 800;
   font-size: 2rem;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .welcome {
